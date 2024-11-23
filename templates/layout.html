@@ -21,6 +21,8 @@
             </ul>
         </nav>
     </section>
+
+    <div class="Bar"></div>
     
     <Main>
         {% block content %}
@@ -29,6 +31,30 @@
         -->
         {% endblock %}
     </Main>
+
+    <div class="Bar2"></div>
+
+    <footer class="footer">
+        <section class="Informacion">
+            
+            <p>
+                <img src="{{ url_for('static', filename='Img/Logofooter.png')}}" alt="" width="30px" height="30px" class="Logito">    Esta página web ha sido diseñada con el propósito de almacenar y presentar los resultados de nuestra empresa.
+            </p>
+            <p>De esta manera, facilitamos a nuestros clientes potenciales la posibilidad de contratarnos o solicitar información sobre nuestros programas y servicios.</p>
+        </section>
+        <section class="Contacto">
+            <div class="Info">
+                <span>Redes sociales</span>
+                <a href="">Git Hub</a>
+                <a href="">Empresa</a>
+                <a href="">Nioy</a>
+                <a href="">Ezxquiel</a>
+            </div>
+            <div class="Proxi">
+                <a href="">Próximamente</a>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>

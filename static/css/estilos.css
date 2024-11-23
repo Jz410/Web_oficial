@@ -3,11 +3,46 @@
     margin: 0;
     padding: 0;
     font-family: Montserrat, sans-serif;
+    transition: all 0.5s;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Bar{
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    border-radius: 50%;
+    animation: Salida 0.5s ;
+}
+.Bar2{
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 20px;
+    animation: Salida 0.5s ;
+}
+
+@keyframes Salida {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
 }
 
 main{
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin: 20px;
 }
 
 :root {
@@ -62,12 +97,14 @@ main{
     transition: all 0.5s ease-in-out;
     border-bottom: 1px solid rgba(224, 212, 212, 0);
     margin: 10px;
+    transition: all 0.5s;
 }
 
 .Menu a:hover{
     border-bottom: 1px solid rgb(255, 255, 255);
     text-align: center;
     transition: all 0.5s ease-in-out;
+    transition: all 0.5s;
 
 }
 
@@ -147,5 +184,97 @@ main{
     .Menu img{
         width: 120px;
         height: 120px;
+    }
+}
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: var(--colorTexto);
+}
+
+.Informacion{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+    margin: 25px;
+    color: #000000;
+}
+
+.Contacto{
+    display: flex;
+    width: 100%;
+    margin: 30px;
+}
+
+.Info{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+.Proxi{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Info span{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.Info a{
+    padding-left: 7px;
+    margin-top: 5px;
+    font-weight: bolder;
+    color: #838383;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+.Proxi a{
+    padding-left: 7px;
+    margin-top: 5px;
+    font-weight: bolder;
+    color: #c4c4c4;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transition: all 5s;
+}
+
+.Info a:hover{
+    animation: Saltito 1s infinite;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    color: #0f0f0f;
+}
+.Proxi a:hover{
+    animation: Saltito 1s infinite;
+    transition: all 0.5s ease-in-out;
+    color: #0f0f0f;
+}
+
+.Logito{
+    animation: Rotate 10s ease-in-out infinite;
+    margin-top: 20px;
+}
+
+@keyframes Rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
