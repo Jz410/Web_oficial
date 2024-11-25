@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Proxi-Error.css')}}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='Img/Logo.webp')}}" type="image/x-icon">
     <title>{{ NW }} - Jz Web Oficial</title>
 </head>
@@ -14,10 +15,11 @@
         <nav class="Menu">
             <img src="{{ url_for('static', filename='Img/Logo.webp')}}" alt="Logo De La Web">
             <ul>
-                <li><a href="">Código Abierto</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">Proyectos de pagó</a></li>
-                <li><a href="">Más Información</a></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/codigoabierto">Código Abierto</a></li>
+                <li><a href="/proyectos">Proyectos</a></li>
+                <li><a href="/proyectosdepago">Proyectos de pagó</a></li>
+                <li><a href="/proximamente">Más Información</a></li>
             </ul>
         </nav>
     </section>
@@ -47,11 +49,16 @@
                 <span>Redes sociales</span>
                 <a href="">Git Hub</a>
                 <a href="">Empresa</a>
+            </div>
+            <div class="Info">
+                <span>Personal</span>
                 <a href="">Nioy</a>
                 <a href="">Ezxquiel</a>
             </div>
+            
+
             <div class="Proxi">
-                <a href="">Próximamente</a>
+                <a>Próximamente</a>
             </div>
         </section>
     </footer>
