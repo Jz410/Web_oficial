@@ -19,6 +19,7 @@ body{
     background-color: black;
     border-radius: 50%;
     animation: Salida 0.5s ;
+
 }
 .Bar2{
     width: 90%;
@@ -47,6 +48,7 @@ main{
 
 :root {
     --colorTexto: #ffffff;
+    --ColorNegro: black
     --TextoFont: 'Times New Roman';
 }
 
@@ -66,9 +68,14 @@ main{
     width: 90%;
     height: 80px;
     margin: 30px;
-    background-color: rgb(177, 177, 177);
+    
     border-radius: 20px;
     animation: EntradaMenu .8s ease-in-out 1;
+    box-shadow: 1px 1px 2px black;
+    
+    background-color: white;
+    color: black;
+
 }
 
 .Menu ul{
@@ -92,16 +99,16 @@ main{
 .Menu a{
     text-wrap: wrap;
     text-decoration: none;
-    color: var(--colorTexto);
+    color: black;
     text-align: center;
     transition: all 0.5s ease-in-out;
-    border-bottom: 1px solid rgba(224, 212, 212, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
     margin: 10px;
     transition: all 0.5s;
 }
 
 .Menu a:hover{
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 0, 0);
     text-align: center;
     transition: all 0.5s ease-in-out;
     transition: all 0.5s;
@@ -113,6 +120,7 @@ main{
     height: 50px;
     border-radius: 50%;
     animation: AguaEfecto 5s infinite;
+    border: 1px solid black;
     
 }
 
